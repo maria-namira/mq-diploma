@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-image: url("images/football_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+  width: 1920px;
+    height: 960px;
+    background-position: center center;
+    margin: 0 0 60px;
+    padding: 0px;
+}
+
+.header::before {
+    content: "";
+    width: 1920px;
+    height: 960px;
+    position: absolute;
+    background-color: #0a0e34;
+    opacity: 0.4;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+    font-style: normal;
+    font-weight: 700;
+}
+.container {
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    z-index: 1;
+    position: relative;
+    padding: 0 25px;
+    margin: auto;
+    width: 1920px;
+}
+.header-logo {
+    position: relative;
+    font-size: 45px;
+    z-index: 5;
+    display: flex;
+    width: 191px;
+    height: 45px;
+    padding-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.header-title {
+    text-transform: uppercase;
+    width: 1078px;
+    color: #ffffff;
+    margin-top:  150px;
+    margin-bottom: 70px;
+    z-index: 1;
+    font-size: 90px;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+.header_title{
+    width: 1078px;
+    height: 67px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 100px;
+    text-transform: uppercase;
+
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #0f0d0e;
+    width: 664px;
+    height: 67px;
+    z-index: 1;
+
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.button-download{
+    box-sizing: border-box;
+    box-shadow: 8px 14px 24px #0a0e34;
+    border-radius: 30px/60px;
+    margin-left: 46px;
+    margin-right: 48px;
+    width: 311px;
+    color: white;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #5e42b0;
+    height: 77px;
+   justify-content: center;
+    align-items: center;
+   cursor: pointer;
+
+}
+
+.download{
+    box-sizing: border-box;
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+
+.downloads{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.downloads::hover{
+    outline: 2px solid #eeeeee;
+}
+.download_icon{
+    display: inline-block;
+    width: 42px;
+    height: 48px;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    fill: #ffffff;
+}
+.post-section{
+    width: 1925px;
+    height: 908px;
+
+}
+.post-text{
+
+    height: 908px;
+    box-sizing: border-box;
+}
+.post-image {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.post-image_2{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+
+}
+
+
+.page-content{
+    width: 1925px;
+    height: 5871px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+
+}
+.athlets_post{
+    width: 1925px;
+    height: 908px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title_post_athlets{
+    text-transform: uppercase;
+    width: 341px;
+    height: 60px;
+    color: #e7e7e7;
+    font-family: "Open Sans";
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 108px;
+   padding-left: 40px;
+}
+.post-title-athlets{
+    display: inline-block;
+    width: 19px;
+    height: 14px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34px;
+    text-transform: uppercase;
+    vertical-align: super;
+    padding-left: 47px;
+    padding-right: 10px;
+
+
+}
+.post-title-athlets::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #5e42b0;
+    margin: 0px auto;
+
+
+}
+
+.post-name{
+    text-transform: uppercase;
+    color: #c1c1c1;
+    font-size: 36px;
+   margin-left: 10px;
+
+}
+.post-content_athlets{
+    display: block;
+    width: 692px;
+    height: 22px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 34px;
+    margin-bottom: 100px;
+    padding-left: 40px;
+
+}
+.athlets_post_colaboration{
+    width: 1925px;
+    height: 250px;
+    display: flex;
+    background-color: #5e42b0;
+
+}
+.athlets-post{
+    display: inline-block;
+}
+.athlets_post_growth{
+    width: 1925px;
+    height: 222px;
+    background-color: #5e42b0;
+}
+.title_post_players{
+    width: 333px;
+    height: 60px;
+    color: #e7e7e7;
+    font-family: "Open Sans";
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+.players_post {
+  display: flex;
+    width: 1925px;
+    height: 851px;
+
+}
+
+.players_post_connection{
+    width: 1925px;
+    height: 908px;
+    display: flex;
+}
+.title_post_players{
+    text-transform: uppercase;
+    width: 341px;
+    height: 60px;
+    color: #e7e7e7;
+    font-family: "Open Sans";
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 108px;
+    padding-left: 40px;
+}
+.post-title-players{
+    display: inline-block;
+    width: 19px;
+    height: 14px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34px;
+    text-transform: uppercase;
+    vertical-align: super;
+    padding-left: 47px;
+    padding-right: 10px;
+
+}
+.post-title-players::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #5e42b0;
+    margin: 0px auto;
+
+}
+
+
+.post-content_players{
+    display: block;
+    width: 692px;
+    height: 22px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 34px;
+    margin-bottom: 100px;
+    padding-left: 40px;
+
+}
+.post-content_growth{
+    display: block;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 34px;
+    margin-bottom: 100px;
+    padding-left: 40px;
+    width: 1925px;
+    height: 196px;
+
+}
+.players_post_colaboration{
+    width: 1925px;
+    height: 250px;
+    display: flex;
+    background-color: #5e42b0;
+    box-sizing: border-box;
+    opacity: 0.04;
+
+}
+.players-post{
+    display: inline-block;
+
+}
+.players_post_growth{
+    width: 1925px;
+    height: 196px;
+
+
+}
+
+p{
+    display: inline-block;
+}
+.top-news{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 1727px;
+    height: 730px;;
+
+}
+.new-title{
+
+    width: 384px;
+    height: 60px;
+    opacity: 0.4;
+    color: #c1c1c1;
+    font-family: "Open Sans";
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-left: 45px;
+}
+.numbers{
+    display: flex;
+    box-sizing: border-box;
+
+}
+.number{
+    width: 168px;
+    height: 155px;
+    box-sizing: border-box;
+    background-color: #5e42b0;
+    background-position: center;
+
+}
+.number_new{
+    width: 25px;
+    height: 19px;
+    color: #f5f6f7;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    text-transform: uppercase;
+    margin-left: 60px;
+
+}
+.number_new::after{
+    content: "";
+    width: 24px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    opacity: 0.3;
+    display: block;
+    margin-left: 60px;
+
+}
+.new-info-post{
+    display: inline-block;
+   margin-top: 116px;
+    margin-left: 200px;
+    margin-right: 40px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+
+
+
+}
+.footer{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 1920px;
+    height: 960px;
+    opacity: 0.1;
+    background-image: url("C:\mq diplom\images\game_1920.jpg");
+    background-size: cover;
+    
+
+}
+.footer-title{
+    text-transform: uppercase;
+    width: 699px;
+    height: 60px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 60px
+}
+.footer_post{
+    width: 537px;
+    height: 24px;
+    color: #a496ca;
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+.footer_logo{
+    width: 130px;
+    height: 137px;
+    background-color: #5e42b0;
+    border-radius: 30px/30px;
+    color: white;
+}
