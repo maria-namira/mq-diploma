@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
-  width: 1920px;
+    width: 1920px;
     height: 960px;
     background-position: center center;
     margin: 0 0 60px;
@@ -45,7 +45,7 @@
     z-index: 1;
     position: relative;
     padding: 0 25px;
-    margin: auto;
+    margin: 0 auto;
     width: 1920px;
 }
 .header-logo {
@@ -61,7 +61,7 @@
     background-position: center center;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    fill: #ffffff;
 }
 
 .header-title {
@@ -102,7 +102,11 @@ h1 {
 a {
     text-decoration: none;
 }
-
+.content{
+    box-sizing: border-box;
+    width: 1920px;
+    height: 4000px;
+}
 .button-download{
     box-sizing: border-box;
     box-shadow: 8px 14px 24px #0a0e34;
@@ -131,8 +135,11 @@ a {
 
 .downloads{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box;
+    align-items: flex-end;
+    background-position: center center;
+    position: relative;
+
 }
 .downloads::hover{
     outline: 2px solid #eeeeee;
@@ -174,12 +181,12 @@ a {
 
 .page-content{
     width: 1925px;
-    height: 5871px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    margin: auto;
-    position: relative;
+    margin: 0 auto;
+
+
 
 }
 .athlets_post{
@@ -237,6 +244,14 @@ a {
     font-size: 36px;
    margin-left: 10px;
 
+
+}
+.post-name::after{
+    content: "";
+    box-sizing: border-box;
+    width: 1925px;
+    height: 222px;
+    background-color: #5e42b0;
 }
 .post-content_athlets{
     display: block;
@@ -280,6 +295,10 @@ a {
   display: flex;
     width: 1925px;
     height: 851px;
+    background-image: url("images/basketballer_991.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
 
 }
 
@@ -402,15 +421,22 @@ p{
 .numbers{
     display: flex;
     box-sizing: border-box;
-
+    position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 450px;
 }
+
 .number{
     width: 168px;
     height: 155px;
     box-sizing: border-box;
     background-color: #5e42b0;
-    background-position: center;
-
+    background-position: center center;
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    margin-left: 450px;
 }
 .number_new{
     width: 25px;
@@ -422,6 +448,7 @@ p{
     line-height: 34px;
     text-transform: uppercase;
     margin-left: 60px;
+    background-position: center center;
 
 }
 .number_new::after{
@@ -438,8 +465,7 @@ p{
 .new-info-post{
     display: inline-block;
    margin-top: 116px;
-    margin-left: 200px;
-    margin-right: 40px;
+
     color: #000000;
     font-family: "Open Sans";
     font-size: 24px;
@@ -452,24 +478,42 @@ p{
 .footer{
     display: flex;
     position: relative;
-    flex-wrap: wrap;
     width: 1920px;
     height: 960px;
-    opacity: 0.1;
-    background-image: url("C:\mq diplom\images\game_1920.jpg");
+    background-image: url("images/game_1920.jpg");
     background-size: cover;
-    
+    background-position: center center;
+    align-items: center;
+    height: 960px;
+    margin: 0 auto;
+    padding-bottom: 30px;
 
 }
+.footer::before{
+    content: "";
+    height: 960px;
+    position: absolute;
+    background-color: #5e42b0;
+    opacity: 0.1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
 .footer-title{
-    text-transform: uppercase;
     width: 699px;
     height: 60px;
     color: #ffffff;
     font-family: "Open Sans";
     font-size: 80px;
     font-weight: 700;
-    line-height: 60px
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 37px;
+    margin-bottom: 20px;
 }
 .footer_post{
     width: 537px;
@@ -480,11 +524,15 @@ p{
     font-weight: 400;
     line-height: 34px;
     text-transform: uppercase;
+    margin-left: 50px;
 }
 .footer_logo{
+    position: relative;
     width: 130px;
     height: 137px;
     background-color: #5e42b0;
     border-radius: 30px/30px;
-    color: white;
+    fill: #ffffff;
+
 }
+
